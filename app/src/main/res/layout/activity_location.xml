@@ -1,37 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context="com.demo.locationwatcher.LocationActivity">
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.demo.locationwatcher.LocationActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/vendor_logo_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/final_logo"
+            android:layout_margin="10dp"
+            />
 
-    <TextView
-        android:id="@+id/latitude_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="latitude"
-        android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/company_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/city_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal"/>
 
-    <TextView
-        android:id="@+id/longitude_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="longitude"
-        android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/latitude_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/longitude_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:layout_margin="10dp"/>
 
 
-    <ToggleButton
-        android:id="@+id/start_stop_toggle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="start"
-        android:layout_margin="10dp"/>
+        <ToggleButton
+            android:id="@+id/start_stop_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
 
-</LinearLayout>
+    </LinearLayout>
+</layout>

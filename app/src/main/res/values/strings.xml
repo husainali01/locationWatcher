@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LocationWatcher</string>
+    <string name="app_name">Shri Samadhan Services</string>
     <string-array name="time_interval">
         <item>2</item>
         <item>5</item>
@@ -7,4 +7,8 @@
         <item>15</item>
         <item>20</item>
     </string-array>
+
+    <!-- Error -->
+    <string name="server_error">Something went wrong please try again later</string>
+    <string name="no_internet">No Internet Connection</string>
 </resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.demo.locationwatcher.model.VendorDataModel"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.demo.locationwatcher.VendorActivity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/vendor_logo_iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/final_logo"
+                android:layout_margin="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/company_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@{model.company}"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/city_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@{model.city}"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/select_engg_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Hello please select engineers name"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"/>
+
+            <Spinner
+                android:id="@+id/spn_engList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:entries="@array/time_interval"
+                android:layout_margin="20dp">
+            </Spinner>
+            <Button
+                android:id="@+id/vendor_submit_btn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Submit"
+                android:layout_margin="30dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/copyright_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{model.copyright}"
+            android:gravity="center"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+</layout>

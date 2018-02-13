@@ -9,14 +9,39 @@
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-
-        <Button
-            android:id="@+id/enable_btn"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/registration_LL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/final_logo"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="50dp"/>
+            <Button
+                android:id="@+id/enable_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:visibility="visible"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* only for Registered users"
+                android:gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/copyright_tv"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="enable camera"
+            android:text="(c) copyright Shri Samadhan Services"
             android:gravity="center"
-            android:layout_gravity="center"
-            android:visibility="gone"/>
+            android:layout_gravity="bottom"/>
     </FrameLayout>
 </layout>
